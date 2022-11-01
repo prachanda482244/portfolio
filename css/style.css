@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-primary-white text-primary-black;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Open sans", sans-serif;
+  }
+}
+
+@layer components {
+  .nav {
+    @apply fixed top-0 left-0 z-40 bg-white/80 w-full backdrop-blur;
+  }
+  .nav-menus {
+    @apply fixed top-0 left-0 z-20 flex flex-col items-center gap-8 pt-28 pb-8 w-full bg-white transition duration-500 shadow-lg;
+  }
+  .nav-links {
+    @apply font-semibold border-b-2 border-transparent;
+  }
+  .home-section {
+    @apply grid items-center grid-cols-1 pt-28;
+  }
+  .btn-primary {
+    @apply bg-primary font-semibold uppercase text-white px-4 py-2.5 rounded shadow-lg;
+  }
+  .container-hero-image {
+    @apply bg-primary rounded-md h-60 overflow-hidden order-1;
+  }
+  .skill {
+    @apply relative flex items-center justify-center bg-white w-28 h-28 rounded-full cursor-pointer;
+  }
+  .skill::before {
+    content: attr(data-text);
+    @apply absolute top-full opacity-100 w-max px-3 py-2 mt-3 bg-white rounded shadow-md transition md:opacity-0
+    md:shadow-md dark:bg-primary-gray;
+  }
+  .skill:hover::before {
+    @apply opacity-100;
+  }
+  .projects-heading {
+    @apply text-3xl md:text-4xl text-center text-primary md:text-left font-bold mb-8 md:mb-12 uppercase;
+  }
+  .project-card {
+    @apply flex flex-col md:flex-row items-center bg-white dark:bg-primary-gray rounded overflow-hidden;
+  }
+  .project-link {
+    @apply flex items-center gap-2 px-4 py-2 w-max hover:brightness-110;
+  }
+  .contact-heading {
+    @apply text-3xl md:text-4xl text-center text-primary font-bold mt-20 mb-8 md:mb-12 uppercase;
+  }
+  .contack-link {
+    @apply p-4 rounded-full hover:brightness-110;
+  }
+  form input,
+  form textarea {
+    @apply px-4 py-2 bg-primary-gray rounded-lg text-white dark:bg-primary-black;
+  }
+}

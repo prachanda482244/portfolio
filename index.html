@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Portfolio | Prachanda Rana</title>
+</head>
+
+<body class="dark:bg-primary-black dark:text-primary-white">
+    <!-- navbar -->
+    <nav class="nav dark:bg-primary-gray/80 py-3 md:py-0">
+        <div class="container flex items-center justify-between h-16 md:h-20">
+            <h1 class="relative z-30 font-semibold tex-2xl flex items-center gap-2 object-cover">
+                <img class="h-10 w-10 rounded-full cursor-pointer" src="/img/logo.jpg" alt="logo">
+                <span class="text-xl font-semibold">
+                    Portfolio
+                </span>
+            </h1>
+            <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
+
+                <!-- Menu list -->
+                <ul class="nav-menus md:static md:flex-row md:gap-12 md:p-0 md:w-auto dark:bg-primary-gray md:shadow-none uppercase md:bg-transparent md:dark:bg-transparent translate-y-[-200%] md:translate-y-0" id="menu">
+                    <li class="nav-items hover:text-cyan-500 active:text-cyan-400 transition duration-500">
+                        <a class="nav-links hover:border-primary" href="#home">Home</a>
+                    </li>
+                    <li class="nav-items hover:text-cyan-500 active:text-cyan-400 transition duration-500">
+                        <a class="nav-links hover:border-primary" href="#about">About</a>
+                    </li>
+                    <li class="nav-items hover:text-cyan-500 active:text-cyan-400 transition duration-500">
+                        <a class="nav-links hover:border-primary" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-items hover:text-cyan-500 active:text-cyan-400 transition duration-500">
+                        <a class="nav-links hover:border-primary" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-items hover:text-cyan-500 active:text-cyan-400 transition duration-500">
+                        <a class="nav-links hover:border-primary" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile menu button -->
+                <button id="toggle-menu" class="relative z-30  p-2 md:hidden dark:invert">
+                    <img class="h-10 cursor-pointer" src="/img/menu-items/menu-item.png" alt="">
+                </button>
+
+                <!-- Toggle theme -->
+                <button id="toggle-theme" class="relative z-30 dark:invert">
+                    <img class="md:opacity-70 w-7  md:-mt-1" src="/img/menu-items/dark-theme.png" alt="theme">
+                </button>
+            </div>
+    </nav>
+
+    <!-- main-section -->
+    <main class="container">
+
+        <!-- Home Section -->
+        <section id="home" class="home-section  md:grid-cols-2 md:pt-0 md:h-screen md:overflow-hidden">
+            <div class="order-2 md:order-1 mt-10">
+                <h2 class="text-5xl md:text-6xl font-bold ">
+                    Myself,
+                </h2>
+
+                <h2 class="text-5xl md:text-5xl  font-bold mt-2">
+                    <span class="text-primary">Prachanda Rana</span>
+                </h2>
+                <h4 class=" text-xl md:text-3xl font-bold opacity-60 my-2">
+                    <span>
+                        I build Things for the Web
+                    </span>
+                </h4>
+                <h3 class="text-2xl md:text-3xl font-bold opacity-70 mt-5 mb-10">
+                    <span class="text-primary">I'M </span>
+                    <span class=" text-2xl md:text-3xl" id="animateText"></span>
+                </h3>
+                <a href="#projects" class="btn-primary hover:brightness-110">See my work</a>
+            </div>
+
+            <div class="container-hero-image md:rounded-none md:h-full  md:order-2">
+
+                <img class="w-full h-full object-cover opacity-90 object-center" src="/img/profile.jpg" alt="profile">
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="py-32">
+
+            <!-- Describe -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
+                <div class="rounded-full w-48 md:w-64 h-48 md:h-64 overflow-hidden bg-primary">
+                    <img class="h-full w-full object-cover opacity-90" src="/img/profile.jpg" alt="profile">
+                </div>
+                <div class="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
+                    <h2 class="text-primary font-bold text-2xl  md:text-3xl mb-3">
+                        Hello there, I'm Prachanda Rana
+                    </h2>
+
+                    <p class=" mb-3 opacity-80">
+                        I'm full stack developer with a keen eye for creating engaging UI, bringing products to life.
+                    </p>
+
+                    <p class="mb-3 opacity-80">
+                        I know I have achieved perfection not when there is nothing left to add, but when there is nothing left to take away.
+                    </p>
+                    <p class=" opacity-80">
+                        A user interface is like a joke. If you have to explain it, it’s not that good.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- My skills -->
+        <section id="skills">
+            <div class="mt-0 md:mt-32 text-center">
+                <h2 class="text-primary uppercase text-3xl md:text-4xl font-bold mb-14">
+                    My Skills
+                </h2>
+                <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 2.5 years">
+                        <img class="w-16" src="/img/skills-items/html.png" alt="html">
+                    </div>
+
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 2 years">
+                        <img class="w-16" src="/img/skills-items/css.png" alt="css">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 2 years">
+                        <img class="w-16" src="/img/skills-items/js.png" alt="js">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1 years">
+                        <img class="w-16" src="/img/skills-items/react.png" alt="react">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1.5 years">
+                        <img class="w-16" src="/img/skills-items/node.png" alt="node">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1 years">
+                        <img class="w-16" src="/img/skills-items/tailwind.png" alt="tailwind">
+                    </div>
+
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 3 years">
+                        <img class="w-16" src="/img/skills-items/git.png" alt="git">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 3 years">
+                        <img class="w-16" src="/img/skills-items/github.png" alt="github">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1 years">
+                        <img class="w-16" src="/img/skills-items/mongodb.png" alt="mongodb ">
+                    </div>
+
+
+
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1.5 years">
+                        <img class="w-16" src="/img/skills-items/php.png" alt="php">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1.5 years">
+                        <img class="w-16" src="/img/skills-items/mysql.png" alt="mysql ">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Dots -->
+        <div class="hidden md:flex items-center justify-between gap-3 mt-20 w-full">
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3 rounded-full"></div>
+        </div>
+
+        <!-- Projects Section -->
+        <section id="projects" class="pt-32 ">
+            <h2 class="projects-heading">My projects</h2>
+            <ul class="w-full md:w-5/6 space-y-10 py-5 ">
+
+                <!-- Project list -->
+                <li class="project-card">
+                    <div class="w-full md:w-1/3 h-60">
+                        <img class="h-full w-full object-cover cursor-pointer" src="/img/project-items/project-1.png " alt="project">
+                    </div>
+                    <div class="w-full md:w-2/3 p-5 ">
+                        <h2 class="text-3xl font-semibold mb-3">Project 1</h2>
+                        <h3 class="text-xl font-semibold my-2">Coding forum:</h3>
+                        <p> Made when I'm in BCA 4th Sem. I try to make it like stackoverflow somehow where users can login and ask the question they are going through ,then other will help to solve the problem
+                        </p>
+                        <div class="language  my-2 flex items-center space-x-2">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/img/skills-items/php.png" alt="php">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/img/skills-items/mysql.png" alt="php">
+                        </div>
+                        <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                            <a href="https://github.com/prachanda482244/Coding-forums" class="project-link bg-primary">
+                                <img class="w-5 h-5" src="/img/skills-items/github.png" alt="github"> Github
+                            </a>
+                            <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
+                                <img class="w-5 h-5" src="/img/skills-items/web.png" alt="github"> Website
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="project-card">
+                    <div class="w-full md:w-1/3 h-60">
+                        <img class="h-full w-full object-cover cursor-pointer" src="/img/project-items/project-2.png " alt="project">
+                    </div>
+                    <div class="w-full md:w-2/3 p-5 ">
+                        <h2 class="text-3xl font-semibold mb-3">Project 2</h2>
+                        <h3 class="text-xl font-semibold my-2">OSMS(online service management system):</h3>
+                        <p>It also made when I'm in BCA 4th Sem. It is look like e-commerce site where user can repair thier things according to thier needs.
+                        </p>
+                        <div class="language  my-2 flex items-center space-x-2">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/img/skills-items/php.png" alt="php">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/img/skills-items/mysql.png" alt="php">
+                        </div>
+                        <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                            <a href="https://github.com/prachanda482244/OSMS-Online-Service-Management-System" class="project-link bg-primary">
+                                <img class="w-5 h-5" src="/img/skills-items/github.png" alt="github"> Github
+                            </a>
+                            <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
+                                <img class="w-5 h-5" src="/img/skills-items/web.png" alt="github"> Website
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="project-card">
+                    <div class="w-full md:w-1/3 h-60">
+                        <img class="h-full w-full object-cover cursor-pointer" src="/img/project-items/project-3.png " alt="project">
+                    </div>
+                    <div class="w-full md:w-2/3 p-5 ">
+                        <h2 class="text-3xl font-semibold mb-3">Project 3</h2>
+                        <h3 class="text-xl font-semibold my-2">Facebook login page clone:</h3>
+                        <p> Made it when I'm learning the tailwind css. It was fun to make the static site like this in a minute
+                        </p>
+                        <div class="language  my-2 flex items-center space-x-2">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/img/skills-items/tailwind.png" alt="tailwind">
+                        </div>
+                        <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                            <a href="https://github.com/prachanda482244/facebook-clone-tailwind-css" class="project-link bg-primary">
+                                <img class="w-5 h-5" src="/img/skills-items/github.png" alt="github"> Github
+                            </a>
+                            <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
+                                <img class="w-5 h-5" src="/img/skills-items/web.png" alt="github"> Website
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="project-card">
+                    <div class="w-full md:w-1/3 h-60">
+                        <img class="h-full w-full object-cover cursor-pointer" src="/img/project-items/project-4.png " alt="project">
+                    </div>
+                    <div class="w-full md:w-2/3 p-5 ">
+                        <h2 class="text-3xl font-semibold mb-3">Project 4</h2>
+                        <h3 class="text-xl font-semibold my-2">Microsoft clone:</h3>
+                        <p> Nothing.... Just using my tailwind skills to make a responsive web application. A responsive Microsoft clone.
+                        </p>
+                        <div class="language  my-2 flex items-center space-x-2">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/img/skills-items/tailwind.png" alt="tailwind">
+                        </div>
+                        <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                            <a href="https://github.com/prachanda482244/microsoft-clone" class="project-link bg-primary">
+                                <img class="w-5 h-5" src="/img/skills-items/github.png" alt="github"> Github
+                            </a>
+                            <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
+                                <img class="w-5 h-5" src="/img/skills-items/web.png" alt="github"> Website
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="project-card">
+                    <div class="w-full md:w-1/3 h-60">
+                        <img class="h-full w-full object-cover cursor-pointer" src="/img/project-items/project-5.png " alt="project">
+                    </div>
+                    <div class="w-full md:w-2/3 p-5 ">
+                        <h2 class="text-3xl font-semibold mb-3">Project 5</h2>
+                        <h3 class="text-xl font-semibold my-2">Facebook clone (responsive & dynamic):</h3>
+                        <p>Pefect thing doesn't exist.. Facebook clone with all the functionalities. User can login , add the post , User can message each other ..Using socket io</p>
+                        <div class="language  my-2 flex items-center space-x-2">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/img/skills-items/tailwind.png" alt="tailwind">
+                            <img class=" h-8 w-8 rounded-full object-center " src="/img/skills-items/react.png " alt="react ">
+                            <img class=" h-8 w-8 rounded-full object-center " src="/img/skills-items/node.png " alt="node ">
+
+                        </div>
+                        <div class="mt-8 font-semibold text-white flex items-center gap-2 ">
+                            <a href="# " class="project-link bg-primary ">
+                                <img class="w-5 h-5 " src="/img/skills-items/github.png " alt="github "> Github
+                            </a>
+                            <a href="# " class="project-link bg-primary-gray dark:bg-primary-black ">
+                                <img class="w-5 h-5 " src="/img/skills-items/web.png " alt="github "> Website
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <div class="container h-full w-full">
+                <h2 class="contact-heading">Contact Me</h2>
+                <div class="form flex justify-center rounded-lg  w-full md:w-2/3 mx-auto items-center bg-white dark:bg-primary-gray">
+                    <form class="flex flex-col space-y-4 p-5" action="#" onsubmit="sendEmail(); reset(); return false;">
+                        <span class="uppercase text-xl font-semibold">Get in touch</span>
+                        <input class="" type="text" name="name" id="name" placeholder="Your name" required>
+                        <input type="email" name="email" id="email" placeholder="Your email address" required>
+                        <input type="number" id="phone" placeholder="Phone no">
+                        <textarea name="message" id="message" cols="10" rows="5" placeholder="How can i help you ?"></textarea>
+                        <button class="bg-primary px-4 py-2  rounded-lg font-base uppercase font-semibold hover:brightness-110">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full text-center mt-40 bg-white dark:bg-primary-gray">
+        <section class="flex flex-col gap-12 justify-center items-center py-20">
+            <h2 class="text-4xl md:text-5xl font-bold text-primary ">
+                Social links
+            </h2>
+            <div class="flex flex-wrap justify-center gap-5 md:gap-10">
+                <a href="https://www.facebook.com/itachiUchiha482244" target="_blank" class="contact-link bg-blue-500">
+                    <img class="h-10" src="/img/social-items/facebook.png" alt="facebook">
+                </a>
+                <a href="#" target="_blank" class="contact-link ">
+                    <img class="h-10" src="/img/social-items/instagram.png" alt="instagram">
+                </a>
+                <a href="https://github.com/prachanda482244" target="_blank" class="contact-link ">
+                    <img class="h-10" src="/img/social-items/github.png" alt="github">
+                </a>
+            </div>
+        </section>
+        <h2 class="pb-10">
+            &copy; copyright 2020- Prachanda Rana
+        </h2>
+    </footer>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src=" js/app.js "></script>
+<script src="js/animate.js "></script>
+
+</html>
