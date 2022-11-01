@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="/assets/logo.b79d00ad.jpg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Portfolio | Prachanda Rana</title>
+  <link rel="stylesheet" href="/assets/index.ceed10a3.css">
+</head>
+
+<body class="dark:bg-primary-black dark:text-primary-white">
+    <!-- navbar -->
+    <nav class="nav dark:bg-primary-gray/80 py-3 md:py-0">
+        <div class="container flex items-center justify-between h-16 md:h-20">
+            <h1 class="relative z-30 font-semibold tex-2xl flex items-center gap-2 object-cover">
+                <img class="h-10 w-10 rounded-full cursor-pointer" src="/assets/logo.b79d00ad.jpg" alt="logo">
+                <span class="text-xl font-semibold">
+                    Portfolio
+                </span>
+            </h1>
+            <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
+
+                <!-- Menu list -->
+                <ul class="nav-menus md:static md:flex-row md:gap-12 md:p-0 md:w-auto dark:bg-primary-gray md:shadow-none uppercase md:bg-transparent md:dark:bg-transparent translate-y-[-200%] md:translate-y-0" id="menu">
+                    <li class="nav-items hover:text-cyan-500 active:text-cyan-400 transition duration-500">
+                        <a class="nav-links hover:border-primary" href="#home">Home</a>
+                    </li>
+                    <li class="nav-items hover:text-cyan-500 active:text-cyan-400 transition duration-500">
+                        <a class="nav-links hover:border-primary" href="#about">About</a>
+                    </li>
+                    <li class="nav-items hover:text-cyan-500 active:text-cyan-400 transition duration-500">
+                        <a class="nav-links hover:border-primary" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-items hover:text-cyan-500 active:text-cyan-400 transition duration-500">
+                        <a class="nav-links hover:border-primary" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-items hover:text-cyan-500 active:text-cyan-400 transition duration-500">
+                        <a class="nav-links hover:border-primary" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile menu button -->
+                <button id="toggle-menu" class="relative z-30  p-2 md:hidden dark:invert">
+                    <img class="h-10 cursor-pointer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX////t7e3u7u4AAADr6+vs7Ozz8/Px8fG7u7vl5eXV1dWNjY2urq6Wlpb39/eZmZnIyMioqKjDw8NJSUk/Pz/a2tptbW3g4OAbGxvPz8+2trZnZ2dCQkJVVVUmJiYXFxd9PqD8AAAEDklEQVR4nO2c2XKjMBBFWWwJMoMwjhPbWf//L2MsT/LGlJtwW41uP52XVHErbXTQVhRjlVVVlSulIpHnYEIm/F/CbVmWm5VScaFye6XNKqksKvU2WpYqJjRP1fV3GH+Sm1XS7YWaxsMsQ7HSaCiO+Ew4lVDfPOg0YqLT2KccEtJpzFOsNBqKIz4TTiXUNw86jZjoNPYph4R0GvMUK42G4ojPhFMJ9c2DTiMmOo19yiEhncY8xUqjoTjiM+FUQn3zoNOIiU5jn3JISKcxT7HSaCiO+Ew4lVDfPOg0YqLT2KccEtJpzFOsOa1Qee+rhUlpxPehcG3bPozVtguSK4JTSOjD/rVG1es+eLTT+PYRlm+sx9YLn1ToNL6F5hur9Uin8Ud4wLo+euCIH94UEh4CLqFrFALWdeNgThPeVRK+B5zTqASsa8GT/qs7RxmN98xYR9iI/6CU8AxL+KSU8AnmNEEpYYA5TfhQCfgRYE7jepWEnWw8lFmbSkLhLIYooXtRCPgi+kiUztMEfJ/2ATtPEwZwwCEIn7S4+99+I3d8BuZ7Pjr8PI0P1W7o+/7PWH2/IA27Mnj8PM03ubEWJtHrcOY8jR3i2pN5ymFlZv0JZU5jh8ROY4dipdFQyxAT2qdY+uZBpxETncY+5ZCQTmOeYs1pBX/5EPcLk9KI74LfNU3zd6ymWZB2XmU/jXP9CTbVdurdzLm2+03B7WDxYu2c8EmFTgMPOEZEOo0/wwPW9Rm6n+ZTIeEncj8NetEi1gDcT3NQSXjgfprfcxqt/TQz9mLc+Xfr309jcE/UvaaglFDwpIXMadTepVvYfhpT46HMaXCfFT91AjqNLS+VzdNofVsA52kc+r94+z4EztNcvvFxOxTnf+ML52ncqudpvgkx17ad8Xyx9FeIuPYkJq492accEsqcxg6JncYOxUqjoZYhJrRPsfTNg04jJjqNfcohIZ3GPMWSNsBYNs7MCBKWPpT7oeu66+mkrluQhv1W49xTAJ9dC2in0Tp/CHMarTOkMKcxdQ5Y9ppSCAg9y+06lYTC8/gSp9G7UwHlNIr3YoCcxuDdJnf+3fr30+Ava4vF/TS/uJ9G7a4v2H4aU/e1iZxG5c69N+h+Gkv3JsrmaVTuvtxC52m07i8FztMYu4NWkBB7j7DoJzg74Y1s3AWtv0LEtScxce3JPuWQUOY0dkjsNHYoVhoNtQwxoX2KpW8edBox0WnsUw4J6TTmKVYaDcURnwmnEuqbB51GTHQa+5RDQjqNeYqVRkNxxGfCqYT65kGnEROdxj7lkJBOY55ipdFQHPGZcCqhvnnQacREp7FPOSSk05inWGk0FEd8JpxKqG8edBox0WnsUw4J6TTmKVYaDcURnwmnEv68UNdHX8DKFsu5QrZiAAAAAElFTkSuQmCC" alt="">
+                </button>
+
+                <!-- Toggle theme -->
+                <button id="toggle-theme" class="relative z-30 dark:invert">
+                    <img class="md:opacity-70 w-7  md:-mt-1" src="data:image/png;base64,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" alt="theme">
+                </button>
+            </div>
+    </nav>
+
+    <!-- main-section -->
+    <main class="container">
+
+        <!-- Home Section -->
+        <section id="home" class="home-section  md:grid-cols-2 md:pt-0 md:h-screen md:overflow-hidden">
+            <div class="order-2 md:order-1 mt-10">
+                <h2 class="text-5xl md:text-6xl font-bold ">
+                    Myself,
+                </h2>
+
+                <h2 class="text-5xl md:text-5xl  font-bold mt-2">
+                    <span class="text-primary">Prachanda Rana</span>
+                </h2>
+                <h4 class=" text-xl md:text-3xl font-bold opacity-60 my-2">
+                    <span>
+                        I build Things for the Web
+                    </span>
+                </h4>
+                <h3 class="text-2xl md:text-3xl font-bold opacity-70 mt-5 mb-10">
+                    <span class="text-primary">I'M </span>
+                    <span class=" text-2xl md:text-3xl" id="animateText"></span>
+                </h3>
+                <a href="#projects" class="btn-primary hover:brightness-110">See my work</a>
+            </div>
+
+            <div class="container-hero-image md:rounded-none md:h-full  md:order-2">
+
+                <img class="w-full h-full object-cover opacity-90 object-center" src="/assets/profile.9c592dec.jpg" alt="profile">
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="py-32">
+
+            <!-- Describe -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
+                <div class="rounded-full w-48 md:w-64 h-48 md:h-64 overflow-hidden bg-primary">
+                    <img class="h-full w-full object-cover opacity-90" src="/assets/profile.9c592dec.jpg" alt="profile">
+                </div>
+                <div class="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
+                    <h2 class="text-primary font-bold text-2xl  md:text-3xl mb-3">
+                        Hello there, I'm Prachanda Rana
+                    </h2>
+
+                    <p class=" mb-3 opacity-80">
+                        I'm full stack developer with a keen eye for creating engaging UI, bringing products to life.
+                    </p>
+
+                    <p class="mb-3 opacity-80">
+                        I know I have achieved perfection not when there is nothing left to add, but when there is nothing left to take away.
+                    </p>
+                    <p class=" opacity-80">
+                        A user interface is like a joke. If you have to explain it, it’s not that good.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- My skills -->
+        <section id="skills">
+            <div class="mt-0 md:mt-32 text-center">
+                <h2 class="text-primary uppercase text-3xl md:text-4xl font-bold mb-14">
+                    My Skills
+                </h2>
+                <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 2.5 years">
+                        <img class="w-16" src="/assets/html.25319599.png" alt="html">
+                    </div>
+
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 2 years">
+                        <img class="w-16" src="/assets/css.a7e2f5f2.png" alt="css">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 2 years">
+                        <img class="w-16" src="/assets/js.1c31b20b.png" alt="js">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1 years">
+                        <img class="w-16" src="/assets/react.d15ad917.png" alt="react">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1.5 years">
+                        <img class="w-16" src="/assets/node.8852d2b9.png" alt="node">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1 years">
+                        <img class="w-16" src="/assets/tailwind.e5e18457.png" alt="tailwind">
+                    </div>
+
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 3 years">
+                        <img class="w-16" src="/assets/git.e86fd377.png" alt="git">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 3 years">
+                        <img class="w-16" src="/assets/github.7ad397a2.png" alt="github">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1 years">
+                        <img class="w-16" src="/assets/mongodb.4e2c2632.png" alt="mongodb ">
+                    </div>
+
+
+
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1.5 years">
+                        <img class="w-16" src="/assets/php.53ac338f.png" alt="php">
+                    </div>
+                    <div class="skill dark:bg-primary-gray " data-text="Experience 1.5 years">
+                        <img class="w-16" src="/assets/mysql.f753a98c.png" alt="mysql ">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Dots -->
+        <div class="hidden md:flex items-center justify-between gap-3 mt-20 w-full">
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-primary/60 h-3 w-3 rounded-full"></div>
+            <div class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3 rounded-full"></div>
+        </div>
+
+        <!-- Projects Section -->
+        <section id="projects" class="pt-32 ">
+            <h2 class="projects-heading">My projects</h2>
+            <ul class="w-full md:w-5/6 space-y-10 py-5 ">
+
+                <!-- Project list -->
+                <li class="project-card">
+                    <div class="w-full md:w-1/3 h-60">
+                        <img class="h-full w-full object-cover cursor-pointer" src="/img/project-items/project-1.png " alt="project">
+                    </div>
+                    <div class="w-full md:w-2/3 p-5 ">
+                        <h2 class="text-3xl font-semibold mb-3">Project 1</h2>
+                        <h3 class="text-xl font-semibold my-2">Coding forum:</h3>
+                        <p> Made when I'm in BCA 4th Sem. I try to make it like stackoverflow somehow where users can login and ask the question they are going through ,then other will help to solve the problem
+                        </p>
+                        <div class="language  my-2 flex items-center space-x-2">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/assets/php.53ac338f.png" alt="php">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/assets/mysql.f753a98c.png" alt="php">
+                        </div>
+                        <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                            <a href="https://github.com/prachanda482244/Coding-forums" class="project-link bg-primary">
+                                <img class="w-5 h-5" src="/assets/github.7ad397a2.png" alt="github"> Github
+                            </a>
+                            <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
+                                <img class="w-5 h-5" src="/assets/web.b10cd8fa.png" alt="github"> Website
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="project-card">
+                    <div class="w-full md:w-1/3 h-60">
+                        <img class="h-full w-full object-cover cursor-pointer" src="/img/project-items/project-2.png " alt="project">
+                    </div>
+                    <div class="w-full md:w-2/3 p-5 ">
+                        <h2 class="text-3xl font-semibold mb-3">Project 2</h2>
+                        <h3 class="text-xl font-semibold my-2">OSMS(online service management system):</h3>
+                        <p>It also made when I'm in BCA 4th Sem. It is look like e-commerce site where user can repair thier things according to thier needs.
+                        </p>
+                        <div class="language  my-2 flex items-center space-x-2">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/assets/php.53ac338f.png" alt="php">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/assets/mysql.f753a98c.png" alt="php">
+                        </div>
+                        <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                            <a href="https://github.com/prachanda482244/OSMS-Online-Service-Management-System" class="project-link bg-primary">
+                                <img class="w-5 h-5" src="/assets/github.7ad397a2.png" alt="github"> Github
+                            </a>
+                            <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
+                                <img class="w-5 h-5" src="/assets/web.b10cd8fa.png" alt="github"> Website
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="project-card">
+                    <div class="w-full md:w-1/3 h-60">
+                        <img class="h-full w-full object-cover cursor-pointer" src="/img/project-items/project-3.png " alt="project">
+                    </div>
+                    <div class="w-full md:w-2/3 p-5 ">
+                        <h2 class="text-3xl font-semibold mb-3">Project 3</h2>
+                        <h3 class="text-xl font-semibold my-2">Facebook login page clone:</h3>
+                        <p> Made it when I'm learning the tailwind css. It was fun to make the static site like this in a minute
+                        </p>
+                        <div class="language  my-2 flex items-center space-x-2">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/assets/tailwind.e5e18457.png" alt="tailwind">
+                        </div>
+                        <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                            <a href="https://github.com/prachanda482244/facebook-clone-tailwind-css" class="project-link bg-primary">
+                                <img class="w-5 h-5" src="/assets/github.7ad397a2.png" alt="github"> Github
+                            </a>
+                            <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
+                                <img class="w-5 h-5" src="/assets/web.b10cd8fa.png" alt="github"> Website
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="project-card">
+                    <div class="w-full md:w-1/3 h-60">
+                        <img class="h-full w-full object-cover cursor-pointer" src="/img/project-items/project-4.png " alt="project">
+                    </div>
+                    <div class="w-full md:w-2/3 p-5 ">
+                        <h2 class="text-3xl font-semibold mb-3">Project 4</h2>
+                        <h3 class="text-xl font-semibold my-2">Microsoft clone:</h3>
+                        <p> Nothing.... Just using my tailwind skills to make a responsive web application. A responsive Microsoft clone.
+                        </p>
+                        <div class="language  my-2 flex items-center space-x-2">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/assets/tailwind.e5e18457.png" alt="tailwind">
+                        </div>
+                        <div class="mt-8 font-semibold text-white flex items-center gap-2">
+                            <a href="https://github.com/prachanda482244/microsoft-clone" class="project-link bg-primary">
+                                <img class="w-5 h-5" src="/assets/github.7ad397a2.png" alt="github"> Github
+                            </a>
+                            <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
+                                <img class="w-5 h-5" src="/assets/web.b10cd8fa.png" alt="github"> Website
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="project-card">
+                    <div class="w-full md:w-1/3 h-60">
+                        <img class="h-full w-full object-cover cursor-pointer" src="/img/project-items/project-5.png " alt="project">
+                    </div>
+                    <div class="w-full md:w-2/3 p-5 ">
+                        <h2 class="text-3xl font-semibold mb-3">Project 5</h2>
+                        <h3 class="text-xl font-semibold my-2">Facebook clone (responsive & dynamic):</h3>
+                        <p>Pefect thing doesn't exist.. Facebook clone with all the functionalities. User can login , add the post , User can message each other ..Using socket io</p>
+                        <div class="language  my-2 flex items-center space-x-2">
+                            <img class="h-8 w-8 rounded-full  object-center" src="/assets/tailwind.e5e18457.png" alt="tailwind">
+                            <img class=" h-8 w-8 rounded-full object-center " src="/img/skills-items/react.png " alt="react ">
+                            <img class=" h-8 w-8 rounded-full object-center " src="/img/skills-items/node.png " alt="node ">
+
+                        </div>
+                        <div class="mt-8 font-semibold text-white flex items-center gap-2 ">
+                            <a href="# " class="project-link bg-primary ">
+                                <img class="w-5 h-5 " src="/img/skills-items/github.png " alt="github "> Github
+                            </a>
+                            <a href="# " class="project-link bg-primary-gray dark:bg-primary-black ">
+                                <img class="w-5 h-5 " src="/img/skills-items/web.png " alt="github "> Website
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <div class="container h-full w-full">
+                <h2 class="contact-heading">Contact Me</h2>
+                <div class="form flex justify-center rounded-lg  w-full md:w-2/3 mx-auto items-center bg-white dark:bg-primary-gray">
+                    <form class="flex flex-col space-y-4 p-5" action="#" onsubmit="sendEmail(); reset(); return false;">
+                        <span class="uppercase text-xl font-semibold">Get in touch</span>
+                        <input class="" type="text" name="name" id="name" placeholder="Your name" required>
+                        <input type="email" name="email" id="email" placeholder="Your email address" required>
+                        <input type="number" id="phone" placeholder="Phone no">
+                        <textarea name="message" id="message" cols="10" rows="5" placeholder="How can i help you ?"></textarea>
+                        <button class="bg-primary px-4 py-2  rounded-lg font-base uppercase font-semibold hover:brightness-110">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full text-center mt-40 bg-white dark:bg-primary-gray">
+        <section class="flex flex-col gap-12 justify-center items-center py-20">
+            <h2 class="text-4xl md:text-5xl font-bold text-primary ">
+                Social links
+            </h2>
+            <div class="flex flex-wrap justify-center gap-5 md:gap-10">
+                <a href="https://www.facebook.com/itachiUchiha482244" target="_blank" class="contact-link bg-blue-500">
+                    <img class="h-10" src="/assets/facebook.193ba9b3.png" alt="facebook">
+                </a>
+                <a href="#" target="_blank" class="contact-link ">
+                    <img class="h-10" src="/assets/instagram.fed9f47a.png" alt="instagram">
+                </a>
+                <a href="https://github.com/prachanda482244" target="_blank" class="contact-link ">
+                    <img class="h-10" src="/assets/github.d83ddf4e.png" alt="github">
+                </a>
+            </div>
+        </section>
+        <h2 class="pb-10">
+            &copy; copyright 2020- Prachanda Rana
+        </h2>
+    </footer>
+</body>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+<script src=" js/app.js "></script>
+<script src="js/animate.js "></script>
+
+</html>
